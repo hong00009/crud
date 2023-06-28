@@ -17,6 +17,10 @@ class Post(models.Model):
 - DB에 반영
     - `python manage.py migrate`
 
+- SQL 스키마 확인
+    - `python manage.py sqlmigrate posts 0001`
+
+
 - `admin.py` 수정
 ``` python
 from django.contrib import admin
