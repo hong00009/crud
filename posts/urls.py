@@ -10,6 +10,7 @@ app_name = 'posts'
 urlpatterns = [
     # Read
     path('', views.index, name='index'),
+    path('<int:id>', views.detail, name='detail') ,
 
     # Create
 
