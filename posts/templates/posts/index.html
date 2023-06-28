@@ -3,11 +3,25 @@
 {% block content %}
 <h1>index</h1>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>title</th>
+            <th>detail</th>
+        </tr>
+    </thead>
 
-{% for post in posts %}
-    {{post.title}}
-    {{post.content}}
+    <tbody>
+        {% for post in posts %}
+            <tr>
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td>detail</td>
+            </tr>
+        {% endfor %}
+    </tbody>
 
-{% endfor %}
+</table>
 
 {% endblock %}
