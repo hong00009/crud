@@ -36,3 +36,9 @@ def create(request):
 
     # redirect('app_name:name')
     return redirect('posts:detail', id=post.id)
+
+def delete(request, id):
+    post = Post.objects.get(id=id)
+    post.delete()
+
+    return redirect('posts:index')
